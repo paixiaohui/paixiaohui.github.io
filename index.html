@@ -1,168 +1,967 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>派小辉的博客 - 知足且坚定 温柔且上进</title><meta name="author" content="派小辉"><meta name="copyright" content="派小辉"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="派小辉的学习笔记">
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="派小辉的学习笔记">
 <meta property="og:type" content="website">
 <meta property="og:title" content="派小辉的博客">
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="派小辉的博客">
 <meta property="og:description" content="派小辉的学习笔记">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://avatars.githubusercontent.com/u/73487640?s=400&u=d44760cbcb825ed8c04c36ed4468382fb960239c&v=4">
 <meta property="article:author" content="派小辉">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://avatars.githubusercontent.com/u/73487640?s=400&u=d44760cbcb825ed8c04c36ed4468382fb960239c&v=4"><link rel="shortcut icon" href="/img/1.ipg"><link rel="canonical" href="http://example.com/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
-  root: '/',
-  algolia: undefined,
-  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
-  translate: undefined,
-  noticeOutdate: undefined,
-  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
-  copy: {
-    success: '复制成功',
-    error: '复制错误',
-    noSupport: '浏览器不支持'
-  },
-  relativeDate: {
-    homepage: false,
-    post: true
-  },
-  runtime: '',
-  date_suffix: {
-    just: '刚刚',
-    min: '分钟前',
-    hour: '小时前',
-    day: '天前',
-    month: '个月前'
-  },
-  copyright: undefined,
-  lightbox: 'fancybox',
-  Snackbar: undefined,
-  source: {
-    justifiedGallery: {
-      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
-      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
-  },
-  isPhotoFigcaption: true,
-  islazyload: false,
-  isAnchor: true
-}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
-  title: '派小辉的博客',
-  isPost: false,
-  isHome: true,
-  isHighlightShrink: false,
-  isToc: false,
-  postUpdate: '2022-06-05 01:01:43'
-}</script><noscript><style type="text/css">
-  #nav {
-    opacity: 1
-  }
-  .justified-gallery img {
-    opacity: 1
-  }
+  };
+</script>
 
-  #recent-posts time,
-  #post-meta time {
-    display: inline !important
-  }
-</style></noscript><script>(win=>{
-    win.saveToLocal = {
-      set: function setWithExpiry(key, value, ttl) {
-        if (ttl === 0) return
-        const now = new Date()
-        const expiryDay = ttl * 86400000
-        const item = {
-          value: value,
-          expiry: now.getTime() + expiryDay,
-        }
-        localStorage.setItem(key, JSON.stringify(item))
-      },
 
-      get: function getWithExpiry(key) {
-        const itemStr = localStorage.getItem(key)
 
-        if (!itemStr) {
-          return undefined
-        }
-        const item = JSON.parse(itemStr)
-        const now = new Date()
+  <link rel="canonical" href="http://example.com/"/>
 
-        if (now.getTime() > item.expiry) {
-          localStorage.removeItem(key)
-          return undefined
-        }
-        return item.value
-      }
-    }
+
+
+
+
+  <title>派小辉的博客</title>
   
-    win.getScript = url => new Promise((resolve, reject) => {
-      const script = document.createElement('script')
-      script.src = url
-      script.async = true
-      script.onerror = reject
-      script.onload = script.onreadystatechange = function() {
-        const loadState = this.readyState
-        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-        script.onload = script.onreadystatechange = null
-        resolve()
-      }
-      document.head.appendChild(script)
-    })
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
   
-      win.activateDarkMode = function () {
-        document.documentElement.setAttribute('data-theme', 'dark')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
-        }
-      }
-      win.activateLightMode = function () {
-        document.documentElement.setAttribute('data-theme', 'light')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
-        }
-      }
-      const t = saveToLocal.get('theme')
+  
     
-          if (t === 'dark') activateDarkMode()
-          else if (t === 'light') activateLightMode()
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">派小辉的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">知足且坚定 温柔且上进</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
         
-      const asideStatus = saveToLocal.get('aside-status')
-      if (asideStatus !== undefined) {
-        if (asideStatus === 'hide') {
-          document.documentElement.classList.add('hide-aside')
-        } else {
-          document.documentElement.classList.remove('hide-aside')
-        }
-      }
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
     
-    const detectApple = () => {
-      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
-        document.documentElement.classList.add('apple')
-      }
-    }
-    detectApple()
-    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://avatars.githubusercontent.com/u/73487640?s=400&amp;u=d44760cbcb825ed8c04c36ed4468382fb960239c&amp;v=4" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">派小辉的博客</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2022/06/05/%E4%BF%A1%E6%81%AF%E9%9A%90%E8%97%8F/" title="信息隐藏"><img class="post_bg" src="https://www.v2fy.com/asset/0i/jikemiji/jikemiji-md/2020-10-22-wall.assets/2020-10-22-1505537.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="信息隐藏"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/06/05/%E4%BF%A1%E6%81%AF%E9%9A%90%E8%97%8F/" title="信息隐藏">信息隐藏</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-06-04T16:42:58.000Z" title="发表于 2022-06-05 00:42:58">2022-06-05</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-06-04T16:44:53.937Z" title="更新于 2022-06-05 00:44:53">2022-06-05</time></span></div><div class="content">信息隐藏1. 伪随机序列生成算法​    真正的随机数符合正态分布且其生成不能重现。但如果一个随机数能够被重现的几率很小，由此可以认为其为伪随机数。常见的伪随机序列生成算法主要有：
-1.1 线性同余发生器​    随机数序列产生公式为：$$X_{n+1}=(aX_n + c)mod;m\qquad 其中，m,a,c,X_0,\in \mathbb{Z}$$​    参数取值需要满足三个标准：函数在重复前应该产生$0-m$之间的所有数；产生的序列应该显得随机；生成函数可以用计算机方便地实现。
-​    满足条件的参数选择如下：
+      
 
-m一般取素数，且要求很大，对于32位机一般取值为$2^{31}-1$;
-a的可取值不多，当$a=7^5 = 16807$时满足以上标准。
+  
 
-​    该算法的缺点是，在参数确定后，伪随机序列只与$X_0$有关，容易被破解，有一种改进的办法就是每隔N个数就以时钟值对m取模作为新的种子来产生新的序列；还有一种方法就是直接将随机数加上时钟值再对m取模。
-​    使用matlab仿真模拟此算法：
-12345678910111213141516171819202122f ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/01/18/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="我的第一篇博客"><img class="post_bg" src="https://www.v2fy.com/asset/0i/jikemiji/jikemiji-md/2020-10-22-wall.assets/2020-10-22-1505537.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="我的第一篇博客"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/01/18/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="我的第一篇博客">我的第一篇博客</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-01-18T04:33:43.000Z" title="发表于 2022-01-18 12:33:43">2022-01-18</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-01-18T04:34:15.969Z" title="更新于 2022-01-18 12:34:15">2022-01-18</time></span></div><div class="content">
-第一章内容
-第二章内容
+  
+  
+  
 
-参考文献</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/01/18/hello-world/" title="Hello World"><img class="post_bg" src="https://www.v2fy.com/asset/0i/jikemiji/jikemiji-md/2020-10-22-wall.assets/2020-10-22-1505537.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/01/18/hello-world/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-01-18T04:31:51.809Z" title="发表于 2022-01-18 12:31:51">2022-01-18</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="1985-10-26T08:15:00.000Z" title="更新于 1985-10-26 16:15:00">1985-10-26</time></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/06/05/%E4%BF%A1%E6%81%AF%E9%9A%90%E8%97%8F/">
 
-More info: Writing
-Run server1$ hexo server
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
 
-More info: Server
-Generate static files1$ hexo generate
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="派小辉的博客">
+    </span>
 
-More info: Generating
-Deploy to remote sites1$ hexo deploy
+    
+      <header class="post-header">
 
-More info: Deployment
-</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://avatars.githubusercontent.com/u/73487640?s=400&amp;u=d44760cbcb825ed8c04c36ed4468382fb960239c&amp;v=4" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">派小辉</div><div class="author-info__description">派小辉的学习笔记</div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/paixiaohui"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/paixiaohui" target="_blank" title="Github"><i class="fab fa-github"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/06/05/%E4%BF%A1%E6%81%AF%E9%9A%90%E8%97%8F/" title="信息隐藏"><img src="https://www.v2fy.com/asset/0i/jikemiji/jikemiji-md/2020-10-22-wall.assets/2020-10-22-1505537.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="信息隐藏"/></a><div class="content"><a class="title" href="/2022/06/05/%E4%BF%A1%E6%81%AF%E9%9A%90%E8%97%8F/" title="信息隐藏">信息隐藏</a><time datetime="2022-06-04T16:42:58.000Z" title="发表于 2022-06-05 00:42:58">2022-06-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/01/18/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="我的第一篇博客"><img src="https://www.v2fy.com/asset/0i/jikemiji/jikemiji-md/2020-10-22-wall.assets/2020-10-22-1505537.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="我的第一篇博客"/></a><div class="content"><a class="title" href="/2022/01/18/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="我的第一篇博客">我的第一篇博客</a><time datetime="2022-01-18T04:33:43.000Z" title="发表于 2022-01-18 12:33:43">2022-01-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/01/18/hello-world/" title="Hello World"><img src="https://www.v2fy.com/asset/0i/jikemiji/jikemiji-md/2020-10-22-wall.assets/2020-10-22-1505537.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2022/01/18/hello-world/" title="Hello World">Hello World</a><time datetime="2022-01-18T04:31:51.809Z" title="发表于 2022-01-18 12:31:51">2022-01-18</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/06/"><span class="card-archive-list-date">六月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/01/"><span class="card-archive-list-date">一月 2022</span><span class="card-archive-list-count">2</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">3</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-06-04T17:01:43.695Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By 派小辉</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi,welcome to my Blog!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">本地搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2022/06/05/%E4%BF%A1%E6%81%AF%E9%9A%90%E8%97%8F/" itemprop="url">信息隐藏</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-06-05T00:42:58+08:00">
+                2022-06-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="信息隐藏"><a href="#信息隐藏" class="headerlink" title="信息隐藏"></a>信息隐藏</h1><h2 id="1-伪随机序列生成算法"><a href="#1-伪随机序列生成算法" class="headerlink" title="1. 伪随机序列生成算法"></a>1. 伪随机序列生成算法</h2><p>​    真正的随机数符合正态分布且其生成不能重现。但如果一个随机数能够被重现的几率很小，由此可以认为其为伪随机数。常见的伪随机序列生成算法主要有：</p>
+<h3 id="1-1-线性同余发生器"><a href="#1-1-线性同余发生器" class="headerlink" title="1.1 线性同余发生器"></a>1.1 线性同余发生器</h3><p>​    随机数序列产生公式为：<br>$$<br>X_{n+1}=(aX_n + c)mod;m\qquad 其中，m,a,c,X_0,\in \mathbb{Z}<br>$$<br>​    参数取值需要满足三个标准：函数在重复前应该产生$0-m$之间的所有数；产生的序列应该显得随机；生成函数可以用计算机方便地实现。</p>
+<p>​    满足条件的参数选择如下：</p>
+<ul>
+<li>m一般取素数，且要求很大，对于32位机一般取值为$2^{31}-1$;</li>
+<li>a的可取值不多，当$a=7^5 = 16807$时满足以上标准。</li>
+</ul>
+<p>​    该算法的缺点是，在参数确定后，伪随机序列只与$X_0$有关，容易被破解，有一种改进的办法就是每隔N个数就以时钟值对m取模作为新的种子来产生新的序列；还有一种方法就是直接将随机数加上时钟值再对m取模。</p>
+<p>​    使用matlab仿真模拟此算法：</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="params">[x,u]</span> = <span class="title">linear_mod_random</span><span class="params">(a, c, m, x0, iterMax)</span></span></span><br><span class="line">    x = [];</span><br><span class="line">    u = [];</span><br><span class="line">    x(<span class="number">1</span>) = x0;</span><br><span class="line">    u(<span class="number">1</span>) = x(<span class="number">1</span>) / m;</span><br><span class="line">    <span class="keyword">for</span> <span class="built_in">i</span> = <span class="number">2</span> : iterMax</span><br><span class="line">        x(<span class="built_in">i</span>) = a * x(<span class="built_in">i</span><span class="number">-1</span>) + c;</span><br><span class="line">        x(<span class="built_in">i</span>) = <span class="built_in">mod</span>(x(<span class="built_in">i</span>), m);</span><br><span class="line">        u(<span class="built_in">i</span>) = x(<span class="built_in">i</span>) / m;</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    </span><br><span class="line">    <span class="built_in">hold</span> on;</span><br><span class="line">    subplot(<span class="number">1</span>,<span class="number">2</span>,<span class="number">1</span>);</span><br><span class="line">    <span class="built_in">plot</span>(x(<span class="number">2</span>:<span class="keyword">end</span>), <span class="string">&#x27;*-&#x27;</span>);</span><br><span class="line">    sTitle = sprintf(<span class="string">&#x27;线性同余随机数发生器 (a=%d, c=%d, m=%d, x0=%d)&#x27;</span>, a, c, m, x0);</span><br><span class="line">    title(sTitle);    </span><br><span class="line">    </span><br><span class="line">    subplot(<span class="number">1</span>,<span class="number">2</span>,<span class="number">2</span>);</span><br><span class="line">    histogram(u(<span class="number">2</span>:<span class="keyword">end</span>));</span><br><span class="line">    title(<span class="string">&#x27;随机数直方图分布&#x27;</span>);</span><br><span class="line">    <span class="built_in">hold</span> off;</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<p>产生20个随机数的结果：</p>
+<p><img src="E:\Geek\blog\source_posts\信息隐藏\image-20220605004343335.png" alt="image-20220605004343335"></p>
+<p>​    结果表明，本伪随机数生成器生成的序列符合均匀性与随机统计特性。</p>
+<hr>
+<h3 id="1-2-BBS发生器"><a href="#1-2-BBS发生器" class="headerlink" title="1.2 BBS发生器"></a>1.2 BBS发生器</h3><p>​    产生过程如下：</p>
+<p>​    首先，选择两个大素数p和q，且要求$p\equiv q\equiv 3(mod ,4)$，令$n=p*q$，接着选择一个随机数s，要求s与n互素，然后按照以下算法产生位$B_i$序列：</p>
+<p>$X_0 =s^2;mod ;n $</p>
+<p>$for ; i=0;to,\infty$</p>
+<p>​        $X_i=(X_{i -1})^2,mod ,n$</p>
+<p>​        $B_i=X_i,mod;2$</p>
+<p>​    BBS发生器是产生安全伪随机数的普遍算法，是特意构造算法中密码强度有最强公开证明的一个，被称为密码安全伪随机数发生器。</p>
+<p>​    BBS的安全性是基于对n的因子分解困难性上的（大整数难分解问题）。</p>
+<p>​    matlab实现BBS伪随机序列生成器核心代码：</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="params">[x,b]</span> = <span class="title">BBS</span><span class="params">(p,q,s,iterMax)</span></span></span><br><span class="line">    x = [];</span><br><span class="line">    b = [];</span><br><span class="line">    n = p * q;</span><br><span class="line">    x(<span class="number">1</span>) = <span class="built_in">mod</span>(s*s,n);</span><br><span class="line">    <span class="keyword">for</span> <span class="built_in">i</span> = <span class="number">2</span> : iterMax</span><br><span class="line">        x(<span class="built_in">i</span>) = <span class="built_in">mod</span>((x(<span class="built_in">i</span><span class="number">-1</span>))^<span class="number">2</span>, n);</span><br><span class="line">        b(<span class="built_in">i</span>) = <span class="built_in">mod</span>(x(<span class="built_in">i</span>),<span class="number">2</span>);</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="comment">%% 测试：</span></span><br><span class="line">[x0,b0] = BBS(<span class="number">383</span>,<span class="number">503</span>,<span class="number">10</span>,<span class="number">1000</span>)</span><br></pre></td></tr></table></figure>
+
+<p>测试结果：</p>
+<p><img src="E:\Geek\blog\source_posts\信息隐藏\image-20220601115051475.png" alt="image-20220601115051475"></p>
+<p>​    结果表明，BBS伪随机序列生成算法产生的随机序列（0-1序列）具有随机统计特性与均匀分布性。</p>
+<hr>
+<h3 id="1-3-RC4流密码"><a href="#1-3-RC4流密码" class="headerlink" title="1.3 RC4流密码"></a>1.3 RC4流密码</h3><p>​    RC4是Ron Rivest在1987年设计的流密码，密钥长度可变，使用面向字节流的操作。</p>
+<p>​    RC4算法步骤如下：</p>
+<ol>
+<li>S向量原状态：</li>
+</ol>
+<p>​                $S=[0,1,2,……，255]$</p>
+<p>​                用二进制字节方式表示为：</p>
+<p>​                $S=[00000000,00000001,……,11111111]$</p>
+<ol start="2">
+<li><p>创建临时向量T（256位），如果密钥K的长度为256位，则直接将K赋值给T，否则一直重复复制K，直到填满256位的向量T。对于keylen长度的密钥K，产生S向量和T向量的伪代码如下：</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">%% 初始化T向量</span></span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span> = <span class="number">0</span> to <span class="number">255</span> do</span><br><span class="line">    S(<span class="built_in">i</span>) = <span class="built_in">i</span>;</span><br><span class="line">    T[<span class="built_in">i</span>] = K[<span class="built_in">i</span> <span class="built_in">mod</span> keylen]</span><br></pre></td></tr></table></figure></li>
+<li><p>接下来使用T向量来产生S的初始排列。此过程是从S[0]开始一直处理到S[255]，同时对每个S[i]，根据T[i]指定的方案将S[i]与S的另一个元素进行交换：</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">%% S的初始排列</span></span><br><span class="line"><span class="built_in">j</span> = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span> = <span class="number">0</span> to <span class="number">255</span> do</span><br><span class="line">    <span class="built_in">j</span> = (<span class="built_in">j</span> + S[<span class="built_in">i</span>] + T[<span class="built_in">i</span>]) <span class="built_in">mod</span> <span class="number">256</span>;</span><br><span class="line">    Swap(S[<span class="built_in">i</span>], S[<span class="built_in">j</span>]);</span><br></pre></td></tr></table></figure></li>
+<li><p>密码流产生。一旦S向量的初始排列完成后，密钥就不再被使用。接下来就是使用S自身来不断输出伪随机密码流：</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">%% 流产生</span></span><br><span class="line"><span class="built_in">i</span>,<span class="built_in">j</span> = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">while</span> (<span class="built_in">true</span>)</span><br><span class="line">    <span class="built_in">i</span> = (<span class="built_in">i</span> + <span class="number">1</span>) <span class="built_in">mod</span> <span class="number">256</span>;  //<span class="built_in">i</span> 不断从<span class="number">0</span>~<span class="number">255</span>循环</span><br><span class="line">    <span class="built_in">j</span> = (<span class="built_in">j</span> + S[<span class="built_in">i</span>] ) <span class="built_in">mod</span> <span class="number">256</span>;</span><br><span class="line">    Swap (S[<span class="built_in">i</span>], S[<span class="built_in">j</span>]);  //每产生一个k都重新排列S</span><br><span class="line">    t = (S[<span class="built_in">i</span>] + S[<span class="built_in">j</span>]) <span class="built_in">mod</span> <span class="number">256</span>;</span><br><span class="line">    k = S[t];  //获取S中的一个随机元素作为密码流字节</span><br></pre></td></tr></table></figure></li>
+<li><p>加密：将第四步中获得的随机字节k与明文的下一字节做异或运算，产生的字节即为对应的密文字节。</p>
+<p>解密：由于加密只是使用密码流对明文做了异或运算，因此解密过程只需要使用相同步骤产生密码流并对密文进行同样的异或运算即可得到加密前的明文。</p>
+</li>
+</ol>
+<p>​    matlab代码：</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">% KSA密钥调度算法</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="params">[ S ]</span> = <span class="title">KSA</span><span class="params">( key )</span></span></span><br><span class="line">    key = char(key);</span><br><span class="line">    key = uint16(key);</span><br><span class="line"></span><br><span class="line">    key_length = <span class="built_in">size</span>(key,<span class="number">2</span>);  <span class="comment">% 返回密钥的大小/长度</span></span><br><span class="line">    S=<span class="number">0</span>:<span class="number">255</span>;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">j</span>=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">0</span>:<span class="number">1</span>:<span class="number">255</span></span><br><span class="line">        <span class="built_in">j</span> =  <span class="built_in">mod</span>( <span class="built_in">j</span> + S(<span class="built_in">i</span>+<span class="number">1</span>) + key(<span class="built_in">mod</span>(<span class="built_in">i</span>, key_length) + <span class="number">1</span>), <span class="number">256</span>);</span><br><span class="line">        S([<span class="built_in">i</span>+<span class="number">1</span> <span class="built_in">j</span>+<span class="number">1</span>]) = S([<span class="built_in">j</span>+<span class="number">1</span> <span class="built_in">i</span>+<span class="number">1</span>]);</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">% 伪随机生成算法PRGA</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="params">[ key ]</span> = <span class="title">PRGA</span><span class="params">( S, n )</span></span></span><br><span class="line"><span class="comment">%S为KSA密钥调度算法的结果</span></span><br><span class="line"><span class="comment">%n为需要进行加密的对象的长度/大小</span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">i</span> = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">j</span> = <span class="number">0</span>;</span><br><span class="line">    key = uint16([]);</span><br><span class="line"><span class="comment">%每轮迭代添加key值</span></span><br><span class="line">    <span class="keyword">while</span> n&gt; <span class="number">0</span></span><br><span class="line">        n = n - <span class="number">1</span>;</span><br><span class="line">        <span class="built_in">i</span> = <span class="built_in">mod</span>( <span class="built_in">i</span> + <span class="number">1</span>, <span class="number">256</span>);</span><br><span class="line">        <span class="built_in">j</span> = <span class="built_in">mod</span>(<span class="built_in">j</span> + S(<span class="built_in">i</span>+<span class="number">1</span>), <span class="number">256</span>);</span><br><span class="line">        S([<span class="built_in">i</span>+<span class="number">1</span> <span class="built_in">j</span>+<span class="number">1</span>]) = S([<span class="built_in">j</span>+<span class="number">1</span> <span class="built_in">i</span>+<span class="number">1</span>]);</span><br><span class="line">        K = S( <span class="built_in">mod</span>(  S(<span class="built_in">i</span>+<span class="number">1</span>) + S(<span class="built_in">j</span>+<span class="number">1</span>)   , <span class="number">256</span>)  + <span class="number">1</span>  );</span><br><span class="line">        key = [key, K];</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<p>测试结果：</p>
+<p><img src="E:\Geek\blog\source_posts\信息隐藏\image-20220601210820733.png" alt="image-20220601210820733"></p>
+<p>​    结果表明：RC4流密码符合伪随机序列的随机统计特性与均匀分布性。</p>
+<hr>
+<h2 id="2-混沌映射"><a href="#2-混沌映射" class="headerlink" title="2. 混沌映射"></a>2. 混沌映射</h2><p>  <strong>混沌系统</strong>是指在一个确定性系统中，存在着貌似随机的不规则运动，其行为表现为不确定性、不可重复、不可预测，这就是混沌现象。混沌是非线性动力系统的固有特性，是非线性系统普遍存在的现象。</p>
+<h3 id="2-1-Logistic映射"><a href="#2-1-Logistic映射" class="headerlink" title="2.1 Logistic映射"></a>2.1 Logistic映射</h3><p>​    Logistic混沌序列的遍历统计特性近似于零均值白噪声，具有良好的随机性、相关性和复杂性。其表达式为：<br>$$<br>x_{k+1} =uX_k(1-x_k)<br>$$<br>matlab代码如下：</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">u = [<span class="number">3.8</span>,<span class="number">3.0</span>,<span class="number">3.99</span>];  <span class="comment">% u的取值</span></span><br><span class="line">MaxCycle = <span class="number">1000</span>;</span><br><span class="line">N = <span class="number">3</span>;</span><br><span class="line">x = <span class="built_in">zeros</span>(MaxCycle,N);</span><br><span class="line">x(<span class="number">1</span>,:) = <span class="number">0.5</span>;  <span class="comment">%  初始值</span></span><br><span class="line"></span><br><span class="line">cycle = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">while</span> cycle &lt;= MaxCycle - <span class="number">1</span></span><br><span class="line">    <span class="keyword">for</span> <span class="built_in">i</span> = <span class="number">1</span>:N</span><br><span class="line">        <span class="comment">% 一维logistic映射</span></span><br><span class="line">        x(cycle + <span class="number">1</span>,<span class="built_in">i</span>) = x(cycle,<span class="built_in">i</span>) * u(<span class="built_in">i</span>) * (<span class="number">1</span> - x(cycle,<span class="built_in">i</span>));</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    cycle = cycle + <span class="number">1</span>;</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<p>实验结果：</p>
+<p><img src="E:\Geek\blog\source_posts\信息隐藏\image-20220602101854048.png" alt="image-20220602101854048"></p>
+<p>直方图：</p>
+<p>$u=3.8$:</p>
+<p><img src="E:\Geek\blog\source_posts\信息隐藏\image-20220602103049207.png" alt="image-20220602103049207"></p>
+<p>$u=3.0$:</p>
+<p><img src="E:\Geek\blog\source_posts\信息隐藏\image-20220602103131330.png" alt="image-20220602103131330"></p>
+<p>$u=3.99$:</p>
+<p><img src="E:\Geek\blog\source_posts\信息隐藏\image-20220602103201584.png" alt="image-20220602103201584"> </p>
+<p>​    可以发现，当u越靠近4时，整幅图像呈现一种伪随机分布的情况，与[0,1]均匀分布很像。而当u处于其他范围时，函数会收敛到某个值。</p>
+<hr>
+<h2 id="3-LSB算法"><a href="#3-LSB算法" class="headerlink" title="3. LSB算法"></a>3. LSB算法</h2><p>​    LSB（Least Significant Bit），最低有效位，该算法的基本原理是将载体图像的LSB篡改为信息者想要发送的秘密信息的二进制位。LSB隐写算法是一种简单且高效的信息隐藏技术。LSB隐写通过修改灰度值分量的最低二进制位来实现。</p>
+<h3 id="3-1-LSB顺序替换算法实现"><a href="#3-1-LSB顺序替换算法实现" class="headerlink" title="3.1 LSB顺序替换算法实现"></a>3.1 LSB顺序替换算法实现</h3><p>LSB顺序替换算法进行信息隐藏代码：</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">I = imread(<span class="string">&quot;lena.jpg&quot;</span>);</span><br><span class="line">I = rgb2gray(I);</span><br><span class="line"><span class="comment">%显示原图像和隐藏信息后的图像</span></span><br><span class="line"></span><br><span class="line">I1 = imread(<span class="string">&quot;lena.jpg&quot;</span>);</span><br><span class="line">I1 = rgb2gray(I1);</span><br><span class="line">[m,n]= <span class="built_in">size</span>(I1) <span class="comment">%读取出原始图像灰度图的列像素个数和行像素个数</span></span><br><span class="line">data = <span class="built_in">floor</span>(<span class="built_in">rand</span>(<span class="number">1</span>,<span class="number">65536</span>)*<span class="number">5</span>);<span class="comment">%产生一组65536个的0—4的随机数，作为待隐藏的信息</span></span><br><span class="line">fprintf(<span class="string">&#x27;隐藏数据：&#x27;</span>);</span><br><span class="line"><span class="built_in">disp</span>(data); <span class="comment">%显示隐藏信息</span></span><br><span class="line">carrier = <span class="built_in">reshape</span>(I1,<span class="number">1</span>,m*n);<span class="comment">%将原始图片转化为一维数组 65536</span></span><br><span class="line"></span><br><span class="line"><span class="comment">%进行信息隐藏</span></span><br><span class="line">point=<span class="number">1</span>;   <span class="comment">% 隐藏65536个0-4的随机数</span></span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:m</span><br><span class="line">    <span class="keyword">if</span> point&gt;<span class="number">65536</span></span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> <span class="built_in">j</span>=<span class="built_in">i</span>:n</span><br><span class="line">        <span class="keyword">if</span> point&gt;<span class="number">65536</span></span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">        <span class="keyword">if</span> point==<span class="number">65536</span>-<span class="built_in">mod</span>(<span class="number">65536</span>,<span class="number">3</span>)+<span class="number">1</span>  <span class="comment">%剩余数据不足三位时单独处理</span></span><br><span class="line">            I1(<span class="built_in">i</span>,<span class="built_in">j</span>)=<span class="built_in">fix</span>(double(I1(<span class="built_in">i</span>,<span class="built_in">j</span>))/<span class="number">8</span>);</span><br><span class="line">            I1(<span class="built_in">i</span>,<span class="built_in">j</span>)=I1(<span class="built_in">i</span>,<span class="built_in">j</span>)*<span class="number">8</span>;</span><br><span class="line">            num=<span class="number">4</span>;</span><br><span class="line">            <span class="keyword">for</span> k=point:<span class="number">65536</span></span><br><span class="line">                I1(<span class="built_in">i</span>,<span class="built_in">j</span>)=I1(<span class="built_in">i</span>,<span class="built_in">j</span>)+data(k)*num;</span><br><span class="line">                num=num/<span class="number">2</span>;</span><br><span class="line">            <span class="keyword">end</span></span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">        I1(<span class="built_in">i</span>,<span class="built_in">j</span>)=<span class="built_in">fix</span>(double(I1(<span class="built_in">i</span>,<span class="built_in">j</span>))/<span class="number">8</span>);     <span class="comment">%后三位置0，放入待隐藏数据</span></span><br><span class="line">        I1(<span class="built_in">i</span>,<span class="built_in">j</span>)=I1(<span class="built_in">i</span>,<span class="built_in">j</span>)*<span class="number">8</span>;</span><br><span class="line">        I1(<span class="built_in">i</span>,<span class="built_in">j</span>)=I1(<span class="built_in">i</span>,<span class="built_in">j</span>)+data(point)*<span class="number">4</span>+data(point+<span class="number">1</span>)*<span class="number">2</span>+data(point+<span class="number">2</span>);</span><br><span class="line">        point=point+<span class="number">3</span>;</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">fprintf(<span class="string">&#x27;信息隐藏成功!\r\n&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">figure</span>()</span><br><span class="line">subplot(<span class="number">1</span>,<span class="number">2</span>,<span class="number">1</span>);imshow(I);title(<span class="string">&#x27;原图&#x27;</span>);</span><br><span class="line">subplot(<span class="number">1</span>,<span class="number">2</span>,<span class="number">2</span>);imshow(I1);title(<span class="string">&#x27;隐藏信息后的图像&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">figure</span>();</span><br><span class="line">subplot(<span class="number">1</span>,<span class="number">2</span>,<span class="number">1</span>),imhist(I),title(<span class="string">&#x27;原图直方图&#x27;</span>);<span class="comment">%打印嵌入信息后的图片直方图</span></span><br><span class="line">subplot(<span class="number">1</span>,<span class="number">2</span>,<span class="number">2</span>),imhist(I1), title(<span class="string">&#x27;隐藏信息后的图像直方图&#x27;</span>);<span class="comment">%显示原隐藏信息后的图像直方图</span></span><br><span class="line"></span><br><span class="line">[PSNR] = psnr(I1, I)</span><br><span class="line">MSE = mse(I1,I)</span><br><span class="line">SSIM = ssim(I1, I)</span><br></pre></td></tr></table></figure>
+
+<p>​    程序运行结果展示，这里是给8位bit的后三位进行信息隐藏填充。</p>
+<p>​    隐藏结果：</p>
+<p><img src="E:\Geek\blog\source_posts\信息隐藏\image-20220604162639470.png" alt="image-20220604162639470"></p>
+<p>载密图像的8个比特平面位结果：</p>
+<p><img src="E:\Geek\blog\source_posts\信息隐藏\image-20220604170747592.png" alt="image-20220604170747592"></p>
+<p>载体图像与载密图像直方图：</p>
+<p><img src="E:\Geek\blog\source_posts\信息隐藏\image-20220604164324365.png" alt="image-20220604164324365"></p>
+<p>​    隐藏的数据为：</p>
+<p><img src="E:\Geek\blog\source_posts\信息隐藏\image-20220604164713885.png" alt="image-20220604164713885"></p>
+<p>载密图像与载体图像的图象质量对比（PSNR，MSE，SSIM（结构相似性））指标如下：</p>
+<p><img src="E:\Geek\blog\source_posts\信息隐藏\image-20220604164751741.png" alt="image-20220604164751741"></p>
+<p>分析：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">一般说来，MSE越小，PSNR越大，说明图像质量越好。</span><br><span class="line">PSNR高于40dB说明图象质量极好（即非常接近）；</span><br><span class="line">在30-40dB通常表示图像质量是好的（即失真可以察觉但可以接受）</span><br></pre></td></tr></table></figure>
+
+<p>​    这里的PSNR为30.9087，属于可接受范围。</p>
+<p>​    分析：通过实验结果可以发现，LSB算法的嵌入容量较小，当我对每个像素位的后三位都嵌入秘密信息时，载密图像与载体图像直方图对比明显，不符合信息隐藏的不可检测性。因此，在实际运用此算法进行信息隐藏时，应注意嵌入容量。</p>
+<h3 id="3-2-LSB-随机替换算法"><a href="#3-2-LSB-随机替换算法" class="headerlink" title="3.2 LSB 随机替换算法"></a>3.2 LSB 随机替换算法</h3><p>LSB随机替换算法进行信息隐藏代码：</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">clc;</span><br><span class="line">clear;</span><br><span class="line">close all;</span><br><span class="line">I = imread(<span class="string">&quot;lena.jpg&quot;</span>);</span><br><span class="line">I = rgb2gray(I);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">I1 = imread(<span class="string">&quot;lena.jpg&quot;</span>);</span><br><span class="line">I1 = rgb2gray(I1);</span><br><span class="line">[m,n]= <span class="built_in">size</span>(I1) <span class="comment">%读取出原始图像灰度图的列像素个数和行像素个数</span></span><br><span class="line">data = <span class="built_in">floor</span>(<span class="built_in">rand</span>(<span class="number">1</span>,(m*n/<span class="number">16</span>))*<span class="number">5</span>);<span class="comment">%产生一组二分之一像素个数的0—4的随机数，作为待隐藏的信息</span></span><br><span class="line"><span class="comment">% fprintf(&#x27;隐藏数据：&#x27;);disp(data); %显示隐藏信息</span></span><br><span class="line">carrier = <span class="built_in">reshape</span>(I1,<span class="number">1</span>,m*n);<span class="comment">%将原始图片转化为一维数组 </span></span><br><span class="line">N = m*n;</span><br><span class="line"><span class="comment">% 设置随机间隔进行信息隐藏</span></span><br><span class="line">L = <span class="number">8</span>;  <span class="comment">% 随机间隔设置为8</span></span><br><span class="line"></span><br><span class="line"><span class="comment">%进行信息隐藏</span></span><br><span class="line">point=<span class="number">1</span>;</span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span> = <span class="number">1</span>:<span class="number">16</span>:<span class="number">240</span></span><br><span class="line">    <span class="keyword">if</span> point&gt;m*n/<span class="number">16</span></span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">if</span> point==m*n/<span class="number">16</span>-<span class="built_in">mod</span>(m*n/<span class="number">16</span>,<span class="number">3</span>)+<span class="number">1</span>  <span class="comment">%剩余数据不足三位时单独处理</span></span><br><span class="line">        b = <span class="built_in">fix</span>(<span class="built_in">rand</span>(<span class="number">1</span>)*<span class="number">16</span>);</span><br><span class="line">        I1(<span class="built_in">i</span>+b,<span class="built_in">j</span>+b)=<span class="built_in">fix</span>(double(I1(<span class="built_in">i</span>+b,<span class="built_in">j</span>+b))/<span class="number">16</span>);</span><br><span class="line">        I1(<span class="built_in">i</span>+b,<span class="built_in">j</span>+b)=I1(<span class="built_in">i</span>+b,<span class="built_in">j</span>)*<span class="number">8</span>;</span><br><span class="line">        num=<span class="number">4</span>;</span><br><span class="line">        <span class="keyword">for</span> k=point:m*n/<span class="number">8</span></span><br><span class="line">            I1(<span class="built_in">i</span>+b,<span class="built_in">j</span>+b)=I1(<span class="built_in">i</span>+b,<span class="built_in">j</span>+b)+data(k)*num;</span><br><span class="line">            num=num/<span class="number">2</span>;</span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">for</span> <span class="built_in">j</span> = <span class="number">1</span>:<span class="number">16</span>:<span class="number">240</span></span><br><span class="line">        a = <span class="built_in">ceil</span>(<span class="built_in">rand</span>(<span class="number">1</span>)*<span class="number">16</span>);  <span class="comment">% 生成随机数</span></span><br><span class="line">        c = <span class="built_in">i</span> + a;</span><br><span class="line">        d = <span class="built_in">j</span> + a;</span><br><span class="line">        I1(c,d)=<span class="built_in">fix</span>(double(I1(c,d))/<span class="number">8</span>);     <span class="comment">%后三位置0，放入待隐藏数据</span></span><br><span class="line">        I1(c,d)=I1(c,d)*<span class="number">8</span>;</span><br><span class="line">        I1(c,d)=I1(c,d)+data(point)*<span class="number">4</span>+data(point+<span class="number">1</span>)*<span class="number">2</span>+data(point+<span class="number">2</span>);</span><br><span class="line">        point=point+<span class="number">3</span>;</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">fprintf(<span class="string">&#x27;信息隐藏成功!\r\n&#x27;</span>);</span><br><span class="line"><span class="comment">%显示原图像和隐藏信息后的图像</span></span><br><span class="line"><span class="built_in">figure</span>()</span><br><span class="line">subplot(<span class="number">1</span>,<span class="number">2</span>,<span class="number">1</span>);imshow(I);title(<span class="string">&#x27;原图&#x27;</span>);</span><br><span class="line">subplot(<span class="number">1</span>,<span class="number">2</span>,<span class="number">2</span>);imshow(I1);title(<span class="string">&#x27;隐藏信息后的图像&#x27;</span>);</span><br><span class="line"><span class="built_in">figure</span>()</span><br><span class="line">subplot(<span class="number">1</span>,<span class="number">2</span>,<span class="number">1</span>),imhist(I),title(<span class="string">&#x27;原图直方图&#x27;</span>);<span class="comment">%打印嵌入信息后的图片直方图</span></span><br><span class="line">subplot(<span class="number">1</span>,<span class="number">2</span>,<span class="number">2</span>),imhist(I1), title(<span class="string">&#x27;隐藏信息后的图像直方图&#x27;</span>);<span class="comment">%显示原隐藏信息后的图像直方图</span></span><br><span class="line"></span><br><span class="line">[PSNR, MSE] = psnr(I1, I)</span><br><span class="line">SSIM = ssim(I1, I)</span><br></pre></td></tr></table></figure>
+
+<p>​    原图像的灰度值：</p>
+<p><img src="E:\Geek\blog\source_posts\信息隐藏\image-20220604212633541.png" alt="image-20220604212633541"></p>
+<p>随机替换后的图像灰度值：</p>
+<p><img src="E:\Geek\blog\source_posts\信息隐藏\image-20220604212658956.png" alt="image-20220604212658956"></p>
+<p>随机替换算法与顺序替换的实验结果相差不大，此处不在展示其结果</p>
+<hr>
+<h2 id="4-隐写分析"><a href="#4-隐写分析" class="headerlink" title="4. 隐写分析"></a>4. 隐写分析</h2><p>​    隐写分析（Steg Analysis）是指在已知或未知嵌入算法的情况下，从观察到的数据检测判断其中是否存在秘密信息，分析数据量的大小和数据嵌入的位置，并最终破解嵌入内容的过程。</p>
+<h3 id="4-1-GPC隐写分析算法"><a href="#4-1-GPC隐写分析算法" class="headerlink" title="4.1 GPC隐写分析算法"></a>4.1 GPC隐写分析算法</h3>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/18/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="派小辉的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2022/01/18/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" itemprop="url">我的第一篇博客</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-01-18T12:33:43+08:00">
+                2022-01-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <hr>
+<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>内容</p>
+<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>内容</p>
+<hr>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/18/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="派小辉的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2022/01/18/hello-world/" itemprop="url">Hello World</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-01-18T12:31:51+08:00">
+                2022-01-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">派小辉</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
