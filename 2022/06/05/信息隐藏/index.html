@@ -79,15 +79,32 @@
 
 
 
-<meta name="description" content="派小辉的学习笔记">
-<meta property="og:type" content="website">
-<meta property="og:title" content="派小辉的博客">
-<meta property="og:url" content="http://example.com/index.html">
+<meta name="description" content="信息隐藏1. 伪随机序列生成算法​    真正的随机数符合正态分布且其生成不能重现。但如果一个随机数能够被重现的几率很小，由此可以认为其为伪随机数。常见的伪随机序列生成算法主要有： 1.1 线性同余发生器​    随机数序列产生公式为：$$X_{n+1}&#x3D;(aX_n + c)mod;m\qquad 其中，m,a,c,X_0,\in \mathbb{Z}$$​    参数取值需要满足三个标准：函数在">
+<meta property="og:type" content="article">
+<meta property="og:title" content="信息隐藏">
+<meta property="og:url" content="http://example.com/2022/06/05/%E4%BF%A1%E6%81%AF%E9%9A%90%E8%97%8F/index.html">
 <meta property="og:site_name" content="派小辉的博客">
-<meta property="og:description" content="派小辉的学习笔记">
+<meta property="og:description" content="信息隐藏1. 伪随机序列生成算法​    真正的随机数符合正态分布且其生成不能重现。但如果一个随机数能够被重现的几率很小，由此可以认为其为伪随机数。常见的伪随机序列生成算法主要有： 1.1 线性同余发生器​    随机数序列产生公式为：$$X_{n+1}&#x3D;(aX_n + c)mod;m\qquad 其中，m,a,c,X_0,\in \mathbb{Z}$$​    参数取值需要满足三个标准：函数在">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/E:/Geek/blog/source/img/image-20220605004343335.png">
+<meta property="og:image" content="http://example.com/E:/Geek/blog/source/img/image-20220601115051475.png">
+<meta property="og:image" content="http://example.com/E:/Geek/blog/source/img/image-20220601210820733.png">
+<meta property="og:image" content="http://example.com/E:/Geek/blog/source/img/image-20220602101854048.png">
+<meta property="og:image" content="http://example.com/E:/Geek/blog/source/img/image-20220602103049207.png">
+<meta property="og:image" content="http://example.com/E:/Geek/blog/source/img/image-20220602103131330.png">
+<meta property="og:image" content="http://example.com/E:/Geek/blog/source/img/image-20220602103201584.png">
+<meta property="og:image" content="http://example.com/E:/Geek/blog/source/img/image-20220604162639470.png">
+<meta property="og:image" content="http://example.com/E:/Geek/blog/source/img/image-20220604170747592.png">
+<meta property="og:image" content="http://example.com/E:/Geek/blog/source/img/image-20220604164324365.png">
+<meta property="og:image" content="http://example.com/E:/Geek/blog/source/img/image-20220604164713885.png">
+<meta property="og:image" content="http://example.com/E:/Geek/blog/source/img/image-20220604164751741.png">
+<meta property="og:image" content="http://example.com/E:/Geek/blog/source/img/image-20220604212633541.png">
+<meta property="og:image" content="http://example.com/E:/Geek/blog/source/img/image-20220604212658956.png">
+<meta property="article:published_time" content="2022-06-04T17:32:39.000Z">
+<meta property="article:modified_time" content="2022-06-04T17:33:20.650Z">
 <meta property="article:author" content="派小辉">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/E:/Geek/blog/source/img/image-20220605004343335.png">
 
 
 
@@ -117,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="http://example.com/"/>
+  <link rel="canonical" href="http://example.com/2022/06/05/信息隐藏/"/>
 
 
 
 
 
-  <title>派小辉的博客</title>
+  <title>信息隐藏 | 派小辉的博客</title>
   
 
 
@@ -142,8 +159,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -216,9 +232,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -248,9 +264,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2022/06/05/%E4%BF%A1%E6%81%AF%E9%9A%90%E8%97%8F/" itemprop="url">信息隐藏</a></h1>
+          <h1 class="post-title" itemprop="name headline">信息隐藏</h1>
         
 
         <div class="post-meta">
@@ -300,9 +314,7 @@
       
 
       
-        
-          
-            <h1 id="信息隐藏"><a href="#信息隐藏" class="headerlink" title="信息隐藏"></a>信息隐藏</h1><h2 id="1-伪随机序列生成算法"><a href="#1-伪随机序列生成算法" class="headerlink" title="1. 伪随机序列生成算法"></a>1. 伪随机序列生成算法</h2><p>​    真正的随机数符合正态分布且其生成不能重现。但如果一个随机数能够被重现的几率很小，由此可以认为其为伪随机数。常见的伪随机序列生成算法主要有：</p>
+        <h1 id="信息隐藏"><a href="#信息隐藏" class="headerlink" title="信息隐藏"></a>信息隐藏</h1><h2 id="1-伪随机序列生成算法"><a href="#1-伪随机序列生成算法" class="headerlink" title="1. 伪随机序列生成算法"></a>1. 伪随机序列生成算法</h2><p>​    真正的随机数符合正态分布且其生成不能重现。但如果一个随机数能够被重现的几率很小，由此可以认为其为伪随机数。常见的伪随机序列生成算法主要有：</p>
 <h3 id="1-1-线性同余发生器"><a href="#1-1-线性同余发生器" class="headerlink" title="1.1 线性同余发生器"></a>1.1 线性同余发生器</h3><p>​    随机数序列产生公式为：<br>$$<br>X_{n+1}=(aX_n + c)mod;m\qquad 其中，m,a,c,X_0,\in \mathbb{Z}<br>$$<br>​    参数取值需要满足三个标准：函数在重复前应该产生$0-m$之间的所有数；产生的序列应该显得随机；生成函数可以用计算机方便地实现。</p>
 <p>​    满足条件的参数选择如下：</p>
 <ul>
@@ -406,8 +418,6 @@
 <hr>
 <h2 id="4-隐写分析"><a href="#4-隐写分析" class="headerlink" title="4. 隐写分析"></a>4. 隐写分析</h2><p>​    隐写分析（Steg Analysis）是指在已知或未知嵌入算法的情况下，从观察到的数据检测判断其中是否存在秘密信息，分析数据量的大小和数据嵌入的位置，并最终破解嵌入内容的过程。</p>
 <h3 id="4-1-GPC隐写分析算法"><a href="#4-1-GPC隐写分析算法" class="headerlink" title="4.1 GPC隐写分析算法"></a>4.1 GPC隐写分析算法</h3>
-          
-        
       
     </div>
     
@@ -424,135 +434,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/18/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="派小辉的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2022/01/18/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" itemprop="url">我的第一篇博客</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-01-18T12:33:43+08:00">
-                2022-01-18
-              </time>
+              <a href="/2022/01/18/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" rel="next" title="我的第一篇博客">
+                <i class="fa fa-chevron-left"></i> 我的第一篇博客
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <hr>
-<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>内容</p>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>内容</p>
-<hr>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -562,142 +465,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/18/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="派小辉的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2022/01/18/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-01-18T12:31:51+08:00">
-                2022-01-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -705,6 +477,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -725,8 +501,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -768,6 +553,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BF%A1%E6%81%AF%E9%9A%90%E8%97%8F"><span class="nav-number">1.</span> <span class="nav-text">信息隐藏</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E4%BC%AA%E9%9A%8F%E6%9C%BA%E5%BA%8F%E5%88%97%E7%94%9F%E6%88%90%E7%AE%97%E6%B3%95"><span class="nav-number">1.1.</span> <span class="nav-text">1. 伪随机序列生成算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-%E7%BA%BF%E6%80%A7%E5%90%8C%E4%BD%99%E5%8F%91%E7%94%9F%E5%99%A8"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.1 线性同余发生器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-BBS%E5%8F%91%E7%94%9F%E5%99%A8"><span class="nav-number">1.1.2.</span> <span class="nav-text">1.2 BBS发生器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-RC4%E6%B5%81%E5%AF%86%E7%A0%81"><span class="nav-number">1.1.3.</span> <span class="nav-text">1.3 RC4流密码</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E6%B7%B7%E6%B2%8C%E6%98%A0%E5%B0%84"><span class="nav-number">1.2.</span> <span class="nav-text">2. 混沌映射</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-Logistic%E6%98%A0%E5%B0%84"><span class="nav-number">1.2.1.</span> <span class="nav-text">2.1 Logistic映射</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-LSB%E7%AE%97%E6%B3%95"><span class="nav-number">1.3.</span> <span class="nav-text">3. LSB算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-LSB%E9%A1%BA%E5%BA%8F%E6%9B%BF%E6%8D%A2%E7%AE%97%E6%B3%95%E5%AE%9E%E7%8E%B0"><span class="nav-number">1.3.1.</span> <span class="nav-text">3.1 LSB顺序替换算法实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-LSB-%E9%9A%8F%E6%9C%BA%E6%9B%BF%E6%8D%A2%E7%AE%97%E6%B3%95"><span class="nav-number">1.3.2.</span> <span class="nav-text">3.2 LSB 随机替换算法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E9%9A%90%E5%86%99%E5%88%86%E6%9E%90"><span class="nav-number">1.4.</span> <span class="nav-text">4. 隐写分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-GPC%E9%9A%90%E5%86%99%E5%88%86%E6%9E%90%E7%AE%97%E6%B3%95"><span class="nav-number">1.4.1.</span> <span class="nav-text">4.1 GPC隐写分析算法</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -901,6 +702,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
